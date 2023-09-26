@@ -1,0 +1,27 @@
+.col {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.container {
+    color: white;
+    background-image: linear-gradient(rgb(78, 75, 227), rgb(9, 19, 203));
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col-sm {
+    margin-left: 60px;
+}
+
+.list-unstyled {
+    list-style-type: none !important;
+}

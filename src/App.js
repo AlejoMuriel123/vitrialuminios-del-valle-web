@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { Header } from "./Components/Header";
+import { withStyles } from "@mui/material/styles";
+import { ThemeProvider } from "@material-ui/core/styles";
+
+import "./App.css";
+import Home from "./Pages/Home";
+import Contactus from "./Pages/Contactus";
+import Navbar from "./Components/Navbar";
+import Products from "./Pages/Products";
+import Footer from "./Components/Footer";
+import Logo from "./Images/Logo.jpg";
+import theme from "./themeConfig";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <header className="header">
+          <img src={Logo} className="logo" alt="Logo"></img>
+          <h1 className="title">VITRIALUMINIOS ASOCIADOS SAS</h1>
+          <ul>
+            <li>Telefono</li>
+            <li>Direccion</li>
+          </ul>
+        </header>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contactus" element={<Contactus />} />
+          <Route path="/Products" element={<Products />} />
+        </Routes>
+        <Footer />
+      </ThemeProvider>
     </div>
   );
 }

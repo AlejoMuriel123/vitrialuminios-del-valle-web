@@ -1,0 +1,28 @@
+.navegation-bar {
+    background-color: #ffb300;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .nav-buttons {
+    background-color: #ffb300;
+    color: white;
+    height: 60px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0.5em 0.75em;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-radius: 12px;
+    margin-left:3px;
+    margin-right: 3px;
+  }
+  
+  .nav-buttons:hover {
+    background-color: #d97a00;
+  } 
+  

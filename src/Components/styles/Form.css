@@ -1,0 +1,20 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-img-4 {
+    background-image: url('../../Images/techosenpolicarbonato.jpg');
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.textinput {
+    background-color: white;
+}

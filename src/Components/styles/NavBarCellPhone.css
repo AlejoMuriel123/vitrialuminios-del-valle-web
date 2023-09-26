@@ -1,0 +1,21 @@
+.cellphone-navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #d1cdcd;
+}
+
+@media (max-width: 100px) {
+    .cellphone-navbar {
+        display: none;
+    }
+}
+
+.nav-buttons {
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.drawer {
+    background-color: none;
+}
